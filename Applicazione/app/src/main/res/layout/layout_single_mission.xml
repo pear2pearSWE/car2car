@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="wrap_content"
+                                             android:id="@+id/ConstraintItemMission"
+                                             android:background="#FFFFFF"
+                                             android:layout_margin="5dp"
+                                             android:backgroundTint="@color/lightGreen">
+    <ImageView
+            android:layout_width="75dp"
+            android:layout_height="75dp" tools:srcCompat="@tools:sample/avatars[11]" android:id="@+id/icon_single_mission"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+            android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent"/>
+    <ImageView
+            android:layout_width="75dp"
+            android:layout_height="75dp" app:srcCompat="@drawable/icon_cover"
+            android:id="@+id/cover_single_mission"
+            app:layout_constraintStart_toStartOf="@+id/icon_single_mission"
+            app:layout_constraintEnd_toEndOf="@+id/icon_single_mission"
+            app:layout_constraintBottom_toBottomOf="@+id/icon_single_mission"
+            app:layout_constraintTop_toTopOf="@+id/icon_single_mission"/>
+    <TextView
+            android:text="Title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_title_single_mission"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/icon_single_mission" android:layout_marginStart="8dp"
+            android:textSize="18sp" android:textColor="@color/black"/>
+    <TextView
+            android:text="Description"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:id="@+id/text_description_single_mission" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/text_title_single_mission" android:layout_marginStart="8dp"
+            app:layout_constraintStart_toEndOf="@+id/icon_single_mission" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="16dp"
+            android:textSize="18sp" android:textColor="@color/black"/>
+    <TextView
+            android:text="100"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_status_single_mission" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="parent" android:textSize="18sp"
+            android:textColor="@color/black"/>
+    <TextView
+            android:text="PE:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/label_pe_single_mission" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toStartOf="@+id/text_status_single_mission"
+            android:layout_marginEnd="8dp" android:textSize="18sp" android:textColor="@color/black"/>
+    <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/mission_progressBar" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/text_description_single_mission" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toEndOf="@+id/icon_single_mission"
+            android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"/>
+</android.support.constraint.ConstraintLayout>

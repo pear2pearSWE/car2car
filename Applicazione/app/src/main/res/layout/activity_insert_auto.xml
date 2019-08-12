@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/insertauto"
+        tools:context=".InsertAuto">
+
+    <TextView
+            android:text="Inserimento auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/label_insert_car"
+    />
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/edit_brand_insert_car"
+            android:hint="Marca"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="Modello"
+            android:ems="10"
+            android:id="@+id/edit_model_insert_car"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="Targa"
+            android:ems="10"
+            android:id="@+id/edit_plates_insert_car"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/edit_price_insert_car" android:hint="Prezzo"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/edit_description_insert_car" android:hint="Descrizione"/>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <Button
+                android:text="Date-Registration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/bt_registration_date_insert_car" android:layout_weight="1"
+                style="@style/BasicButton"/>
+        <TextView
+                android:text="  yyyy/mm/dd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/text_registration_date_insert_car" android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <Button
+                android:text="Date-Start-sharing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/bt_start_date_insert_car" style="@style/BasicButton"/>
+        <TextView
+                android:text="  yyyy/mm/dd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/text_start_date_insert_car"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <Button
+                android:text="Date-end-sharing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/bt_end_date_insert_car" style="@style/BasicButton"/>
+        <TextView
+                android:text="  yyyy/mm/dd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/text_end_date_insert_car"/>
+    </LinearLayout>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/edit_position_insert_car" android:hint="City, Address"/>
+    <Button
+            android:text="CONFERMA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/bt_confirm_insert_car" style="@style/BasicButton"/>
+    <TextView
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/label_code_insert_car" android:visibility="invisible"/>
+</LinearLayout>

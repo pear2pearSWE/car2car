@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent">
+
+    <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp" tools:srcCompat="@tools:sample/avatars[2]"
+            android:id="@+id/icon_user_user_profile" android:layout_marginTop="16dp"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="16dp"/>
+    <TextView
+            android:text="Utente:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/label_user_user_profile" app:layout_constraintStart_toEndOf="@+id/icon_user_user_profile"
+            android:layout_marginStart="16dp" app:layout_constraintTop_toTopOf="@+id/icon_user_user_profile"
+            android:textSize="24sp" android:textColor="@color/black" android:layout_marginTop="8dp"/>
+    <TextView
+            android:text="username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_user_user_profile" app:layout_constraintStart_toEndOf="@+id/label_user_user_profile"
+            android:layout_marginStart="8dp"
+            app:layout_constraintTop_toTopOf="@+id/label_user_user_profile" android:textColor="@color/black"
+            android:textSize="24sp" app:layout_constraintBottom_toBottomOf="@+id/label_user_user_profile"
+    />
+    <TextView
+            android:text="Livello:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/label_level_user_profile" android:textColor="@color/black"
+            android:textSize="24sp" app:layout_constraintStart_toEndOf="@+id/icon_user_user_profile"
+            android:layout_marginStart="16dp" app:layout_constraintTop_toBottomOf="@+id/label_user_user_profile"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/icon_user_user_profile" android:layout_marginTop="8dp"/>
+    <TextView
+            android:text="00"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_level_user_profile"
+            app:layout_constraintStart_toEndOf="@+id/label_level_user_profile"
+            android:layout_marginStart="16dp" android:textSize="24sp" android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="@+id/label_level_user_profile"
+            app:layout_constraintTop_toTopOf="@+id/label_level_user_profile"/>
+    <android.support.v7.widget.RecyclerView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" android:layout_marginTop="24dp"
+            app:layout_constraintTop_toBottomOf="@+id/icon_user_user_profile"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="16dp" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="16dp"
+            android:id="@+id/recycler_view_user_profile">
+    </android.support.v7.widget.RecyclerView>
+    <ProgressBar
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progress_bar_user_profile"
+            app:layout_constraintEnd_toEndOf="@+id/recycler_view_user_profile"
+            app:layout_constraintStart_toStartOf="@+id/recycler_view_user_profile" android:layout_marginTop="16dp"
+            app:layout_constraintTop_toTopOf="@+id/recycler_view_user_profile"/>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+                                             android:layout_marginTop="20dp">
+
+    <ImageView
+            android:layout_width="75dp"
+            android:layout_height="75dp" app:srcCompat="@color/transparent"
+            android:id="@+id/icon_car_my_car_view" android:layout_marginTop="32dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="16dp"
+            android:scaleType="centerCrop"/>
+    <TextView
+            android:text="Marca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_brand_my_car_view" app:layout_constraintStart_toEndOf="@+id/icon_car_my_car_view"
+            android:layout_marginStart="16dp"
+            app:layout_constraintTop_toTopOf="@+id/icon_car_my_car_view"
+            android:textColorHighlight="#00C4A0A0" android:textColor="@color/black" android:textSize="18sp"/>
+    <TextView
+            android:text="Modello"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_model_my_car_view"
+            android:textColor="@color/black" android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/text_brand_my_car_view"
+            android:layout_marginStart="16dp" app:layout_constraintTop_toTopOf="@+id/text_brand_my_car_view"
+    />
+    <TextView
+            android:text="Immatricalazione:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/label_date_my_car_view" android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/text_brand_my_car_view"
+            app:layout_constraintStart_toEndOf="@+id/icon_car_my_car_view" android:layout_marginStart="16dp"
+            android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="@+id/icon_car_my_car_view"/>
+    <TextView
+            android:text="dd/mm/aaaa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_date_my_car_view" android:textSize="18sp"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@+id/text_brand_my_car_view"
+            app:layout_constraintStart_toEndOf="@+id/label_date_my_car_view" android:layout_marginStart="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/icon_car_my_car_view" android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"/>
+    <TextView
+            android:text="Prezzo:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/label_price_my_car_view" android:textSize="18sp"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="@+id/text_price_my_car_view"
+            app:layout_constraintTop_toBottomOf="@+id/icon_car_my_car_view"
+            android:layout_marginTop="16dp" android:layout_marginStart="24dp"
+            app:layout_constraintStart_toStartOf="parent"/>
+    <TextView
+            android:text="0,0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_price_my_car_view" android:textSize="18sp"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toEndOf="@+id/label_price_my_car_view"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp" app:layout_constraintTop_toBottomOf="@+id/icon_car_my_car_view"/>
+    <TextView
+            android:text="€/h"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/label_euro_my_car_view" android:textSize="18sp"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toEndOf="@+id/text_price_my_car_view"
+            android:layout_marginStart="1dp" app:layout_constraintTop_toTopOf="@+id/text_price_my_car_view"/>
+    <TextView
+            android:text="Targa:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/label_plates_my_car_view"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/label_euro_my_car_view" android:layout_marginStart="32dp"
+            app:layout_constraintTop_toTopOf="@+id/label_euro_my_car_view"/>
+    <TextView
+            android:text="abc123"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_plates_my_car_view"
+            app:layout_constraintTop_toTopOf="@+id/label_euro_my_car_view"
+            app:layout_constraintBottom_toBottomOf="@+id/label_euro_my_car_view" android:textColor="@color/black"
+            android:textSize="18sp" app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/label_plates_my_car_view" android:layout_marginStart="16dp"
+    />
+    <TextView
+            android:text="Descrizione"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_description_my_car_view"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="24dp" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="24dp" android:textColor="@color/black" android:textSize="14sp"
+            android:layout_marginTop="24dp" app:layout_constraintTop_toBottomOf="@+id/label_price_my_car_view"/>
+    <TextView
+            android:text="01/01/2001"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" android:id="@+id/text_start_sharing_my_car_view"
+            android:textSize="18sp" android:textColor="@color/black"
+            app:layout_constraintStart_toEndOf="@+id/label_sharing_from_my_car_view"
+            app:layout_constraintTop_toTopOf="@+id/label_sharing_from_my_car_view"
+            app:layout_constraintBottom_toBottomOf="@+id/label_sharing_from_my_car_view"
+            app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="32dp"/>
+    <TextView
+            android:text="01/01/2001"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" android:id="@+id/text_end_sharing_my_car_view"
+            android:textSize="18sp" android:textColor="@color/black"
+            app:layout_constraintStart_toEndOf="@+id/label_sharing_to_my_car_view"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/text_start_sharing_my_car_view" android:layout_marginEnd="32dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginStart="8dp"/>
+    <TextView
+            android:text="Disponibile dal "
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" android:id="@+id/label_sharing_from_my_car_view"
+            android:textSize="18sp" android:textColor="@color/black" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="32dp"
+            app:layout_constraintEnd_toStartOf="@+id/text_start_sharing_my_car_view"
+            app:layout_constraintTop_toBottomOf="@+id/text_description_my_car_view"
+            android:layout_marginTop="32dp" android:layout_marginEnd="8dp" android:textAlignment="textEnd"/>
+    <TextView
+            android:text=" al "
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" android:id="@+id/label_sharing_to_my_car_view"
+            android:textSize="18sp" android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="@+id/label_sharing_from_my_car_view" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/label_sharing_from_my_car_view"
+            android:layout_marginStart="32dp" app:layout_constraintStart_toStartOf="parent"
+            android:textAlignment="textEnd"/>
+    <ProgressBar
+            style="?android:attr/progressBarStyle"
+            android:layout_width="47dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/progress_bar_my_car"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="@+id/text_model_my_car_view" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent"/>
+    <TextView
+            android:text="In Utilizzo:"
+            android:layout_width="wrap_content"
+            android:textSize="18sp" android:textColor="@color/black"
+            android:layout_height="wrap_content"
+            android:id="@+id/label_in_use_my_car" android:layout_marginTop="32dp"
+            app:layout_constraintTop_toBottomOf="@+id/label_sharing_to_my_car_view" android:layout_marginStart="32dp"
+            app:layout_constraintStart_toStartOf="parent"/>
+    <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp" android:textColor="@color/black"
+            android:id="@+id/text_in_use_my_car"
+            app:layout_constraintStart_toEndOf="@+id/label_in_use_my_car" android:layout_marginStart="12dp"
+            app:layout_constraintTop_toTopOf="@+id/label_in_use_my_car"
+            app:layout_constraintBottom_toBottomOf="@+id/label_in_use_my_car"/>
+    <Button
+            android:text="Elimina"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/bt_delete_car"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/text_in_use_my_car" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp"/>
+</android.support.constraint.ConstraintLayout>

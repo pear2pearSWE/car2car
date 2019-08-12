@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".HomeFragment" android:id="@+id/frameLayout2">
+
+    <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/constraint_layout_notifications">
+
+        <TextView
+                android:text="Lista prenotazioni"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/label_notifications"
+                android:textSize="24sp"
+                android:textAlignment="center" android:textColor="@color/black"
+                app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="8dp"/>
+        <ProgressBar
+                style="?android:attr/progressBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/in_progress_bar" app:layout_constraintEnd_toEndOf="@+id/in_rents_recycler_view"
+                app:layout_constraintStart_toStartOf="@+id/in_rents_recycler_view"
+                app:layout_constraintTop_toTopOf="@+id/in_rents_recycler_view"
+                android:layout_marginTop="8dp" android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toTopOf="@+id/label_out_rents_notifications"/>
+        <TextView
+                android:text="In entrata..."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/label_in_rents_notifications"
+                app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+                app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/label_notifications" android:layout_marginTop="8dp"
+                android:textColor="@color/black"/>
+        <TextView
+                android:text="Non hai nessuna notfica in entrata"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/label_no_in_rent_notifications"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.518"
+                android:textColor="@color/black"
+                android:visibility="invisible"
+                android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/label_in_rents_notifications"/>
+        <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/in_rents_recycler_view"
+                android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/label_in_rents_notifications"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp">
+        </android.support.v7.widget.RecyclerView>
+        <TextView
+                android:text="In uscita..."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/label_out_rents_notifications"
+                android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/in_rents_recycler_view"
+                app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+                app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+                android:textColor="@color/black"/>
+        <TextView
+                android:text="Non hai nessuna notfica in uscita"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/label_no_out_rent_notifications"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.511" android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/label_out_rents_notifications"
+                android:textColor="@color/black"
+                android:visibility="invisible"/>
+        <ProgressBar
+                style="?android:attr/progressBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/out_progress_bar" app:layout_constraintEnd_toEndOf="@+id/out_rents_recycler_view"
+                app:layout_constraintStart_toStartOf="@+id/out_rents_recycler_view"
+                android:layout_marginTop="16dp" app:layout_constraintTop_toBottomOf="@+id/label_out_rents_notifications"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/out_rents_recycler_view"/>
+        <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/label_out_rents_notifications"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:id="@+id/out_rents_recycler_view"
+                android:layout_marginTop="8dp" android:layout_marginStart="8dp" android:layout_marginEnd="8dp">
+        </android.support.v7.widget.RecyclerView>
+    </android.support.constraint.ConstraintLayout>
+
+
+</FrameLayout>

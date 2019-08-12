@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="wrap_content"
+                                             android:layout_height="wrap_content">
+
+    <LinearLayout
+            android:id="@+id/layout_form_login"
+            android:layout_width="wrap_content"
+            android:layout_height="302dp"
+            android:orientation="vertical" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_bias="0.55"
+            android:layout_marginStart="8dp" android:layout_marginTop="8dp" android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp">
+
+        <TextView
+                android:text="Devi essere autenticato per poter accedere a questa view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/label_access_denied"
+                android:textAlignment="center"
+                android:layout_marginBottom="20dp" android:textColor="@color/black" android:textSize="14sp"/>
+        <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/input_text_username_login">
+
+            <AutoCompleteTextView
+                    android:id="@+id/username_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Username"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:singleLine="true"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/input_text_password_login">
+
+            <EditText
+                    android:id="@+id/password_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/prompt_password"
+                    android:imeActionId="6"
+                    android:imeActionLabel="@string/action_sign_in_short"
+                    android:imeOptions="actionUnspecified"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:singleLine="true"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+                android:id="@+id/bt_sign_in_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="login"
+                android:textStyle="bold"/>
+        <TextView
+                android:text="Errore credenziali"
+                android:layout_width="match_parent"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:layout_height="wrap_content" android:id="@+id/label_error_login"/>
+        <TextView
+                android:text="Non sei riegistrato? "
+                android:layout_width="match_parent"
+                android:textAlignment="center"
+                android:layout_height="wrap_content" android:id="@+id/label_sign_up_login"/>
+        <Button
+                android:text="Registrati"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/bt_sign_up_login"
+                android:layout_marginLeft="65dp"
+                android:layout_marginRight="65dp"/>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

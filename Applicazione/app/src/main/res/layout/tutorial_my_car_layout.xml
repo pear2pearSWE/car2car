@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+                                             android:background="@color/transparent"
+                                             android:textAlignment="center" android:id="@+id/layout_tutorial_mycars">
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Avanti"
+            android:id="@+id/bt_next_tutorial_my_cars"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="188dp"
+            app:layout_constraintTop_toBottomOf="@+id/label_baloon_tutorial_mycars"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="0.473"/>
+    <TextView
+            android:text="Inseriamo la tua prima auto!!"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true" android:id="@+id/label_tutorial_mycars"
+            android:layout_alignParentEnd="true"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:layout_marginStart="8dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="16dp" app:layout_constraintTop_toTopOf="parent" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textColor="@color/lightGreen"
+            android:textSize="16dp"
+            android:textAlignment="center" app:layout_constraintHorizontal_bias="0.228"
+            android:layout_marginBottom="8dp" app:layout_constraintBottom_toTopOf="@+id/image_baloon_tutorial_mycars"/>
+    <TextView
+            android:text="Da questa schermata sarà possibile visualizzare le tue auto disponibili, puoi sempre aggiungerne di nuove o eliminare quelle che non intendi più condividere. Che stai aspettando? Buttati nella mischia!! "
+            android:layout_width="238dp"
+            android:layout_height="151dp"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:id="@+id/label_baloon_tutorial_mycars"
+            android:textColor="@color/lightGreen"
+            android:textSize="16dp"
+            android:textAlignment="center"
+            app:layout_constraintStart_toStartOf="@+id/image_baloon_tutorial_mycars"
+            app:layout_constraintEnd_toEndOf="@+id/image_baloon_tutorial_mycars"
+            app:layout_constraintHorizontal_bias="0.465"
+            app:layout_constraintTop_toTopOf="@+id/image_baloon_tutorial_mycars" android:layout_marginTop="16dp"
+            android:layout_marginStart="8dp"/>
+    <ImageView
+            android:layout_width="215dp"
+            android:layout_height="194dp" app:srcCompat="@drawable/tutorial_giraffe"
+            android:id="@+id/image_giraffe_tutorial_mycars"
+            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginBottom="16dp"
+            app:layout_constraintEnd_toStartOf="@+id/bt_next_tutorial_search" android:layout_marginEnd="112dp"/>
+    <ImageView
+            android:layout_width="307dp"
+            android:layout_height="234dp" app:srcCompat="@drawable/tutorial_baloon_up"
+            android:id="@+id/image_baloon_tutorial_mycars" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+            app:layout_constraintHorizontal_bias="0.526" android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/label_tutorial_mycars"
+            app:layout_constraintBottom_toTopOf="@+id/image_giraffe_tutorial_mycars"
+            app:layout_constraintVertical_bias="1.0"/>
+
+</android.support.constraint.ConstraintLayout>

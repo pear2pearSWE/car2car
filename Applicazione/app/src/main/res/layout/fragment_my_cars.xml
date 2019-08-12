@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".HomeFragment">
+
+    <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:id="@+id/contraint_layout_my_cars">
+
+        <TextView
+                android:text="Le mie Auto"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp" android:id="@+id/label_my_cars"
+                android:layout_marginTop="16dp" app:layout_constraintTop_toBottomOf="@+id/bt_add_car_my_cars"
+                app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp" android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+                android:textColor="@color/black"/>
+        <Button
+                android:text="Inserisci auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/bt_add_car_my_cars"
+                app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+                app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+                app:layout_constraintHorizontal_bias="0.0" android:layout_marginTop="16dp"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+        <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view_my_cars"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintHorizontal_bias="0.0" android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/label_my_cars" android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"/>
+        <ProgressBar
+                style="?android:attr/progressBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/my_cars_progress_bar" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="6dp" android:layout_marginTop="32dp"
+                app:layout_constraintTop_toBottomOf="@+id/label_my_cars"/>
+        <TextView
+                android:text="Non hai ancora inserito nessuna auto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/label_no_cars_my_cars"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.511" android:layout_marginTop="24dp"
+                app:layout_constraintTop_toBottomOf="@+id/label_my_cars" android:textColor="@color/black"
+                android:visibility="invisible"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+</FrameLayout>

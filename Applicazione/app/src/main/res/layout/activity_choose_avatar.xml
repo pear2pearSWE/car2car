@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                                             android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/layout_info_choose_avatar"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp">
+
+        <TextView
+                android:text="Avatar attuale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/label_your_choose_avatar"
+                android:textSize="24sp"
+                android:textColor="@color/black"
+                android:layout_marginStart="8dp" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="8dp"
+                app:layout_constraintTop_toTopOf="parent"/>
+        <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp" tools:srcCompat="@tools:sample/avatars"
+                android:id="@+id/icon_your_choose_avatar"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp" app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="16dp" app:layout_constraintTop_toBottomOf="@+id/label_your_choose_avatar"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/text_username_choose_avatar"
+                app:layout_constraintStart_toEndOf="@+id/icon_your_choose_avatar"
+                android:layout_marginStart="24dp" android:layout_marginTop="8dp"
+                android:textColor="@color/black"
+                android:textSize="18sp" android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toTopOf="@+id/label_level_choose_avatar" android:layout_marginEnd="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/icon_your_choose_avatar"
+        />
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/text_level_choose_avatar"
+                app:layout_constraintStart_toEndOf="@+id/label_level_choose_avatar"
+                android:textColor="@color/black"
+                android:textSize="18sp" app:layout_constraintTop_toTopOf="@+id/label_level_choose_avatar"
+                app:layout_constraintBottom_toBottomOf="@+id/label_level_choose_avatar"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="8dp" android:layout_marginStart="8dp"/>
+        <TextView
+                android:text="Livello"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/label_level_choose_avatar"
+                app:layout_constraintStart_toEndOf="@+id/icon_your_choose_avatar"
+                android:layout_marginStart="24dp"
+                app:layout_constraintTop_toBottomOf="@+id/text_username_choose_avatar" android:textColor="@color/black"
+                android:textSize="18sp" android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/icon_your_choose_avatar"
+                app:layout_constraintEnd_toStartOf="@+id/text_level_choose_avatar"/>
+    </android.support.constraint.ConstraintLayout>
+    <TextView
+            android:text="Scegli un nuovo avatar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/label_new_choose_avatar" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/layout_info_choose_avatar"/>
+
+    <android.support.constraint.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@+id/label_new_choose_avatar"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp" android:id="@+id/layout_mouse_choose_avatar"
+            android:background="@color/lightGreen" app:layout_constraintEnd_toStartOf="@+id/layout_cat_choose_avatar"
+            android:layout_marginEnd="16dp">
+
+        <ImageView
+                android:layout_width="75dp"
+                android:layout_height="75dp" app:srcCompat="@drawable/avatar_mouse"
+                android:id="@+id/image_mouse_choose_avatar"
+                android:layout_weight="1" android:layout_marginTop="8dp"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="8dp" app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="8dp"/>
+        <TextView
+                android:text="Disponibile\ndal livello"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/label_tutorial_search"
+                android:layout_weight="1"
+                app:layout_constraintStart_toEndOf="@+id/image_mouse_choose_avatar"
+                android:layout_marginStart="8dp" android:layout_marginTop="8dp"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintBottom_toTopOf="@+id/level_mouse_choose_avatar" android:shadowColor="@color/black"
+                android:textAlignment="center"/>
+        <TextView
+                android:text="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/level_mouse_choose_avatar"
+                app:layout_constraintStart_toEndOf="@+id/image_mouse_choose_avatar"
+                android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="8dp" android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent" android:textSize="24sp"
+                android:textColor="@color/black"/>
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/layout_cat_choose_avatar"
+            android:background="@color/lightGreen" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="16dp" app:layout_constraintStart_toEndOf="@+id/layout_mouse_choose_avatar"
+            android:layout_marginStart="16dp" app:layout_constraintTop_toTopOf="@+id/layout_mouse_choose_avatar">
+
+        <ImageView
+                android:layout_width="75dp"
+                android:layout_height="75dp" app:srcCompat="@drawable/avatar_cat"
+                android:id="@+id/image_cat_choose_avatar"
+                android:layout_weight="1" android:layout_marginTop="8dp"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="8dp" app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="8dp"/>
+        <ImageView
+                android:layout_width="0dp"
+                android:layout_height="0dp" app:srcCompat="@drawable/icon_cover"
+                android:id="@+id/cover_cat_choose_avatar"
+                app:layout_constraintTop_toTopOf="@+id/image_cat_choose_avatar"
+                app:layout_constraintBottom_toBottomOf="@+id/image_cat_choose_avatar"
+                app:layout_constraintStart_toStartOf="@+id/image_cat_choose_avatar"
+                app:layout_constraintEnd_toEndOf="@+id/image_cat_choose_avatar"
+                app:layout_constraintHorizontal_bias="0.0" app:layout_constraintVertical_bias="0.0"/>
+        <TextView
+                android:text="Disponibile\ndal livello"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/label_cat_choose_avatar"
+                android:layout_weight="1"
+                app:layout_constraintStart_toEndOf="@+id/image_cat_choose_avatar"
+                android:layout_marginStart="8dp" android:layout_marginTop="8dp"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintBottom_toTopOf="@+id/level_cat_choose_avatar" android:shadowColor="@color/black"
+                android:textAlignment="center"/>
+        <TextView
+                android:text="2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/level_cat_choose_avatar"
+                app:layout_constraintStart_toEndOf="@+id/image_cat_choose_avatar"
+                android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="8dp" android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent" android:textSize="24sp"
+                android:textColor="@color/black"/>
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="16dp"
+            android:id="@+id/layout_dog_choose_avatar"
+            android:background="@color/lightGreen" app:layout_constraintEnd_toStartOf="@+id/layout_bull_choose_avatar"
+            android:layout_marginEnd="16dp" android:layout_marginTop="24dp"
+            app:layout_constraintTop_toBottomOf="@+id/layout_mouse_choose_avatar">
+
+        <ImageView
+                android:layout_width="75dp"
+                android:layout_height="75dp" app:srcCompat="@drawable/avatar_dog"
+                android:id="@+id/image_dog_choose_avatar"
+                android:layout_weight="1" android:layout_marginTop="8dp"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="8dp" app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="8dp"/>
+        <ImageView
+                android:layout_width="0dp"
+                android:layout_height="0dp" app:srcCompat="@drawable/icon_cover"
+                android:id="@+id/cover_dog_choose_avatar"
+                app:layout_constraintTop_toTopOf="@+id/image_dog_choose_avatar"
+                app:layout_constraintBottom_toBottomOf="@+id/image_dog_choose_avatar"
+                app:layout_constraintStart_toStartOf="@+id/image_dog_choose_avatar"
+                app:layout_constraintEnd_toEndOf="@+id/image_dog_choose_avatar"
+                app:layout_constraintHorizontal_bias="0.0" app:layout_constraintVertical_bias="0.0"/>
+        <TextView
+                android:text="Disponibile\ndal livello"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/label_dog_choose_avatar"
+                android:layout_weight="1"
+                app:layout_constraintStart_toEndOf="@+id/image_dog_choose_avatar"
+                android:layout_marginStart="8dp" android:layout_marginTop="8dp"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintBottom_toTopOf="@+id/level_dog_choose_avatar" android:shadowColor="@color/black"
+                android:textAlignment="center"/>
+        <TextView
+                android:text="3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/level_dog_choose_avatar"
+                app:layout_constraintStart_toEndOf="@+id/image_dog_choose_avatar"
+                android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="8dp" android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent" android:textSize="24sp"
+                android:textColor="@color/black"/>
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/layout_bull_choose_avatar"
+            android:background="@color/lightGreen" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="16dp" app:layout_constraintStart_toEndOf="@+id/layout_dog_choose_avatar"
+            android:layout_marginStart="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/layout_cat_choose_avatar" android:layout_marginTop="24dp">
+
+        <ImageView
+                android:layout_width="75dp"
+                android:layout_height="75dp" app:srcCompat="@drawable/avatar_bull"
+                android:id="@+id/image_bull_choose_avatar"
+                android:layout_weight="1" android:layout_marginTop="8dp"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="8dp" app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="8dp"/>
+        <ImageView
+                android:layout_width="0dp"
+                android:layout_height="0dp" app:srcCompat="@drawable/icon_cover"
+                android:id="@+id/cover_bull_choose_avatar"
+                app:layout_constraintTop_toTopOf="@+id/image_bull_choose_avatar"
+                app:layout_constraintBottom_toBottomOf="@+id/image_bull_choose_avatar"
+                app:layout_constraintStart_toStartOf="@+id/image_bull_choose_avatar"
+                app:layout_constraintEnd_toEndOf="@+id/image_bull_choose_avatar"
+                app:layout_constraintHorizontal_bias="0.0" app:layout_constraintVertical_bias="0.0"/>
+        <TextView
+                android:text="Disponibile\ndal livello"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/label_bull_choose_avatar"
+                android:layout_weight="1"
+                app:layout_constraintStart_toEndOf="@+id/image_bull_choose_avatar"
+                android:layout_marginStart="8dp" android:layout_marginTop="8dp"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintBottom_toTopOf="@+id/level_bull_choose_avatar" android:shadowColor="@color/black"
+                android:textAlignment="center"/>
+        <TextView
+                android:text="5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/level_bull_choose_avatar"
+                app:layout_constraintStart_toEndOf="@+id/image_bull_choose_avatar"
+                android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="8dp" android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent" android:textSize="24sp"
+                android:textColor="@color/black"/>
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="16dp"
+            android:id="@+id/layout_lion_choose_avatar"
+            android:background="@color/lightGreen"
+            app:layout_constraintEnd_toStartOf="@+id/layout_giraffe_choose_avatar"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="24dp" app:layout_constraintTop_toBottomOf="@+id/layout_dog_choose_avatar">
+
+        <ImageView
+                android:layout_width="75dp"
+                android:layout_height="75dp" app:srcCompat="@drawable/avatar_lion"
+                android:id="@+id/image_lion_choose_avatar"
+                android:layout_weight="1" android:layout_marginTop="8dp"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="8dp" app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="8dp"/>
+        <TextView
+                android:text="Disponibile\ndal livello"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/label_lion_choose_avatar"
+                android:layout_weight="1"
+                app:layout_constraintStart_toEndOf="@+id/image_lion_choose_avatar"
+                android:layout_marginStart="8dp" android:layout_marginTop="8dp"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintBottom_toTopOf="@+id/level_lion_choose_avatar" android:shadowColor="@color/black"
+                android:textAlignment="center"/>
+        <ImageView
+                android:layout_width="0dp"
+                android:layout_height="0dp" app:srcCompat="@drawable/icon_cover"
+                android:id="@+id/cover_lion_choose_avatar"
+                app:layout_constraintTop_toTopOf="@+id/image_lion_choose_avatar"
+                app:layout_constraintBottom_toBottomOf="@+id/image_lion_choose_avatar"
+                app:layout_constraintStart_toStartOf="@+id/image_lion_choose_avatar"
+                app:layout_constraintEnd_toEndOf="@+id/image_lion_choose_avatar"
+                app:layout_constraintHorizontal_bias="0.0" app:layout_constraintVertical_bias="0.0"/>
+        <TextView
+                android:text="7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/level_lion_choose_avatar"
+                app:layout_constraintStart_toEndOf="@+id/image_lion_choose_avatar"
+                android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="8dp" android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent" android:textSize="24sp"
+                android:textColor="@color/black"/>
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/layout_giraffe_choose_avatar"
+            android:background="@color/lightGreen" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="16dp" app:layout_constraintStart_toEndOf="@+id/layout_lion_choose_avatar"
+            android:layout_marginStart="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/layout_bull_choose_avatar" android:layout_marginTop="24dp">
+
+        <ImageView
+                android:layout_width="75dp"
+                android:layout_height="75dp" app:srcCompat="@drawable/avatar_giraffe"
+                android:id="@+id/image_giraffe_choose_avatar"
+                android:layout_weight="1" android:layout_marginTop="8dp"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="8dp" app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="8dp"/>
+        <ImageView
+                android:layout_width="0dp"
+                android:layout_height="0dp" app:srcCompat="@drawable/icon_cover"
+                android:id="@+id/cover_giraffe_choose_avatar"
+                app:layout_constraintTop_toTopOf="@+id/image_giraffe_choose_avatar"
+                app:layout_constraintBottom_toBottomOf="@+id/image_giraffe_choose_avatar"
+                app:layout_constraintStart_toStartOf="@+id/image_giraffe_choose_avatar"
+                app:layout_constraintEnd_toEndOf="@+id/image_giraffe_choose_avatar"
+                app:layout_constraintHorizontal_bias="0.0" app:layout_constraintVertical_bias="0.0"/>
+        <TextView
+                android:text="Disponibile\ndal livello"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/label_giraffe_choose_avatar"
+                android:layout_weight="1"
+                app:layout_constraintStart_toEndOf="@+id/image_giraffe_choose_avatar"
+                android:layout_marginStart="8dp" android:layout_marginTop="8dp"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintBottom_toTopOf="@+id/level_giraffe_choose_avatar"
+                android:shadowColor="@color/black"
+                android:textAlignment="center"/>
+        <TextView
+                android:text="10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/level_giraffe_choose_avatar"
+                app:layout_constraintStart_toEndOf="@+id/image_giraffe_choose_avatar"
+                android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="8dp" android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent" android:textSize="24sp"
+                android:textColor="@color/black"/>
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

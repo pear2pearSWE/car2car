@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+            android:id="@+id/tutorial"
+            android:icon="@drawable/tutorial_giraffe"
+
+            app:showAsAction="always"
+            android:orderInCategory="0"/>
+    <item
+            android:id="@+id/help"
+            android:icon="@android:drawable/ic_dialog_info"
+            android:title="Text to be seen by user"
+            app:showAsAction="always"
+            android:orderInCategory="0"/>
+    <item
+            android:id="@+id/my_profile"
+            android:icon="@android:drawable/ic_menu_myplaces"
+            android:title="Text to be seen by user"
+            app:showAsAction="always"
+            android:orderInCategory="0"/>
+</menu>
